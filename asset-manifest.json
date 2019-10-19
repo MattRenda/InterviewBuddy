@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/interview_buddy/static/js/main.b15432a1.chunk.js",
-    "main.js.map": "/interview_buddy/static/js/main.b15432a1.chunk.js.map",
+    "main.js": "/interview_buddy/static/js/main.5320b4ac.chunk.js",
+    "main.js.map": "/interview_buddy/static/js/main.5320b4ac.chunk.js.map",
     "runtime-main.js": "/interview_buddy/static/js/runtime-main.e99b5963.js",
     "runtime-main.js.map": "/interview_buddy/static/js/runtime-main.e99b5963.js.map",
     "static/css/2.0624914a.chunk.css": "/interview_buddy/static/css/2.0624914a.chunk.css",
     "static/js/2.da8c7683.chunk.js": "/interview_buddy/static/js/2.da8c7683.chunk.js",
     "static/js/2.da8c7683.chunk.js.map": "/interview_buddy/static/js/2.da8c7683.chunk.js.map",
     "index.html": "/interview_buddy/index.html",
-    "precache-manifest.194dff97d47b26e66ad6616afdbc0a45.js": "/interview_buddy/precache-manifest.194dff97d47b26e66ad6616afdbc0a45.js",
+    "precache-manifest.4d8660c1b785c11c2291ae74c48b6f38.js": "/interview_buddy/precache-manifest.4d8660c1b785c11c2291ae74c48b6f38.js",
     "service-worker.js": "/interview_buddy/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/interview_buddy/static/css/2.0624914a.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.e99b5963.js",
     "static/css/2.0624914a.chunk.css",
     "static/js/2.da8c7683.chunk.js",
-    "static/js/main.b15432a1.chunk.js"
+    "static/js/main.5320b4ac.chunk.js"
   ]
 }
