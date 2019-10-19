@@ -17,7 +17,12 @@ mongoose
     });    
     
 app.use(bodyparser.json());
-
+app.use(express.static('client/build'));
+	const path = require('path');
+	app.get('*', (req, res) => {
+		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+    
 app.get('/api/cards/total',(req,res) =>{
     Card.find(function (error,cards){
         questionNumber = cards.length;
