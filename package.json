@@ -1,8 +1,7 @@
 {
-  "name": "interview_buddy",
+  "name": "server",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://MattRenda.github.io/interview_buddy",
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
@@ -20,17 +19,13 @@
     "yarn": "^1.19.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "build": "SET NODE_ENV=production && webpack-dev-server --host 127.0.0.1 --inline --history-api-fallback --content-base",
     "server": "nodemon server.js",
-    "client": "npm start",
+    "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -46,7 +41,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
-  }
+  "engines": {
+    "node": "v10.16.0"
+  },
+  "proxy": "http://localhost:8080"
 }

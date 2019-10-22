@@ -1,3 +1,8 @@
-module.exports = {
-    mongoURI: 'mongodb+srv://Matthewrenda:Qwertyu7@cluster0-rpii8.mongodb.net/InterviewProject?retryWrites=true&w=majority'
-}
+
+//keys.js - figute out what set of credentials to return
+
+if (process.env.NODE_ENV === 'production') {
+    module.exports = require('./prod');
+} else {
+    module.exports = require('./dev');
+} 
