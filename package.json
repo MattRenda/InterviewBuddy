@@ -44,6 +44,5 @@
   },
   "engines": {
     "node": "v10.16.0"
-  },
-  "proxy": "http://localhost:8080"
+  }
 }
