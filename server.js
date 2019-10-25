@@ -10,7 +10,7 @@ const Card = mongoose.model('Card');
 mongoose
     .connect(keys.mongoURI, { useNewUrlParser: true })
     .then(() => {
-        console.log('MongoDB connected.')
+        console.log(keys.mongoURI)
     })
     .catch(err => {
         console.log(err);
