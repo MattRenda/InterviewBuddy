@@ -8,7 +8,8 @@ class Deck extends Component{
         this.state = {
             question:'',
             answer:'',
-            display: 'none'
+            display: 'none',
+            previousQuestion: ''
         };
 
     }
@@ -17,13 +18,18 @@ class Deck extends Component{
     }
     
     callQuestion =() =>{
+        this.setState({display: 'none'})
         let self = this;
         axios.get('/api/cards')
         .then(function (response) {
             // handle success
+            if(response.data.question != self.state.previousQuestion){
+             self.setState({previousQuestion:response.data.question})
              const q = response.data.question;
              const a = response.data.answer;
              self.setState({question: q, answer: a})
+            }
+            else self.callQuestion();
          })
     }
  

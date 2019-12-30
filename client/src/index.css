@@ -1,0 +1,25 @@
+ .linkStyle{
+    color: 'black';
+    text-decoration: 'none'
+}
+ .brandStyle{
+    text-align: 'center';
+    font-size: '50px';
+}
+ .navStyle{
+    display: 'inline';
+    padding: '20px';
+}
+
+ .containerStyle{
+    background-image: url('https://live.staticflickr.com/1690/25312859625_9cfe562a12_b.jpg');
+}
+
+.style{
+    margin: '20px'
+}
+*{
+    font-family: Open Sans, sans-serif;
+    color:rgb(75, 77, 79);
+
+ }

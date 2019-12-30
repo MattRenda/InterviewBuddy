@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import {Header} from './Header';
-import {Footer} from './Footer';
-import { About } from './About';
-import  Home  from './Home';
-import Deck from './Deck'
+import {Header} from './components/Header';
+import {Footer} from './components/Footer';
+import { About } from './components/About';
+import  Home  from './components/Home';
+import Deck from './components/Deck'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css'
 
 const App = () => {
     const style ={
