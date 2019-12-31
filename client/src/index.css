@@ -47,7 +47,7 @@ width: 50%;
 *{
     font-family: Open Sans, sans-serif;
     color:rgb(75, 77, 79);
-
+    font-size: 20px;
  }
 
  .footer-color{
@@ -58,9 +58,34 @@ width: 50%;
 }
 .text-center{
     text-align: center;
+
 }
  .header-color{
      background-color: #CE6C47;
      text-decoration: none
 
  }
+
+ /*
+==============================HOME========================================
+ */
+
+ .question-number{
+     font-size:200%;
+     text-align: center;
+ }
+
+ .question-input{
+    margin: 0 auto;
+     display: block;
+ }
+
+ .question-answer{
+    margin: 0 auto;
+    display: block;
+ }
+
+ .buttons{
+    text-align: center;
+}
+

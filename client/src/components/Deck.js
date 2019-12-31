@@ -53,9 +53,9 @@ class Deck extends Component{
         return (
             <div> 
                 <Container>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <Card style={{ width: '17rem' }}>
+                    <Row >
+                        <Col >
+                            <Card >
                                 <Card.Body>
                                     <Card.Title>Question</Card.Title>
                                     <Card.Text>

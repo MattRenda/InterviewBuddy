@@ -49,54 +49,38 @@ class Home extends Component {
 
                 <Container>
 
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <p>
-                                Interview Buddy allows you to fill out flash cards to quiz yourself for an upcoming interview.<br />
-                                Filling out the card below and submitting it will save one card to your deck of flash cards.<br />
-                                Happy studying!
-                            </p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col></Col>
-                        <Col>
-                            <Card style={{ width: '17rem' }}>
-                                <Card.Body>
-                                    <Form onSubmit={this.handleSubmit}>
-                                        <Card.Title>Question {this.state.counter + 1}</Card.Title>
-                                        <Card.Text>
-                                            <input
-                                                placeholder="Question"
-                                                onChange={this.handleChange}
-                                                type='text'
-                                                name='question'
-                                            ></input>
-                                            <input
-                                                placeholder="Answer"
-                                                onChange={this.handleChange}
-                                                type='text'
-                                                name='answer'
-                                            ></input>
-                                        </Card.Text>
-                                        <Button variant="info" onClick={this.resetQuestions}>Reset</Button>
-                                        <Button variant="info" type='submit' >Submit Question!</Button>
-                                    </Form>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col></Col>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto" >
-                            <p style={style}>
-                                Once you've finished you can start by clicking the "Time to study!" button below.
-                        </p>
-                            <div class="text-center">
-                                <Button variant="info" href="/deck">Time to study!</Button>
-                            </div>
-                        </Col>
-                    </Row>
+                    <form onSubmit={this.handleSubmit}>
+                        <p className="question-number">Question {this.state.counter + 1}</p>
+
+                        <input
+                            className="question-input"
+                            placeholder="Question"
+                            onChange={this.handleChange}
+                            type='text'
+                            name='question'
+                            required
+                        ></input>
+                        <input
+                            className="question-answer"
+                            placeholder="Answer"
+                            onChange={this.handleChange}
+                            type='text'
+                            name='answer'
+                            required
+                        ></input>
+
+                        <div className="buttons">
+                            <button onClick={this.resetQuestions}>Reset</button>
+                            <button type='submit' >Submit Question!</button>
+                        </div>
+
+
+                    </form>
+
+                    <div className="buttons"><button variant="info" href="/deck">Time to study!</button>
+                    </div>
+
+
                 </Container>
             </div>
         )

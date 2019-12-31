@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {Jumbotron,Container} from 'react-bootstrap'
+import { Jumbotron, Container } from 'react-bootstrap'
 
 export const About = () => {
 
@@ -9,9 +9,13 @@ export const About = () => {
             <Jumbotron fluid>
                 <Container>
                     <p>
-                        About this page, <br /> This website was created to help
-                        interviewees prep for upcoming interviews.
-                         </p>
+                        Interview Buddy allows you to fill out flash cards to quiz yourself for an upcoming interview.<br />
+                        Filling out the card below and submitting it will save one card to your deck of flash cards.<br />
+                        Happy studying!
+                            </p>
+                    <p >
+                        Once you've finished you can start by clicking the "Time to study!" button below.
+                        </p>
                 </Container>
             </Jumbotron>
 
