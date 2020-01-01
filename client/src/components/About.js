@@ -14,7 +14,7 @@ export const About = () => {
                         Happy studying!
                             </p>
                     <p >
-                        Once you've finished you can start by clicking the "Time to study!" button below.
+                        Once you've finished you can start by clicking the "Time to study!" button.
                         </p>
                 </Container>
             </Jumbotron>
