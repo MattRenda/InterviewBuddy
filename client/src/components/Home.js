@@ -40,9 +40,6 @@ class Home extends Component {
         this.setState(this.baseState)
     }
     render() {
-        const style = {
-            marginTop: '50px'
-        }
 
         return (
             <div>
@@ -77,7 +74,7 @@ class Home extends Component {
 
                     </form>
 
-                    <div className="buttons"><button variant="info" href="/deck">Time to study!</button>
+                    <div className="buttons"><button><a style={{textDecoration:'none', color:'black'}} href="/deck">Time to study!</a></button>
                     </div>
 
 

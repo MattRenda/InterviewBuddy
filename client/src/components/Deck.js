@@ -46,9 +46,6 @@ class Deck extends Component{
         
     
     render(){
-        const style = {
-            marginTop: '50px'
-        }
    
         return (
             <div> 
@@ -63,8 +60,8 @@ class Deck extends Component{
                                        <div style={{
                                            display: this.state.display}}>{this.state.answer}</div> 
                                      </Card.Text>
-                                     <Button variant="primary" onClick={this.showAnswer}>Check</Button>
-                                    <Button variant="primary" onClick={this.callQuestion}>Next Question!</Button>
+                                     <button variant="primary" onClick={this.showAnswer}>Check</button>
+                                    <button variant="primary" onClick={this.callQuestion}>Next Question!</button>
                                 </Card.Body>
                             </Card>
                         </Col>
