@@ -3,6 +3,7 @@
     font-size: 30px;
     font-weight: 100;
     display: inline;
+    padding: 10px;
 
 }
 .container1{
@@ -33,6 +34,7 @@ width: 50%;
     position: absolute;
     right: 20%;
     bottom: 0px;
+    padding: 5px;
 }
 .pos-about{
     color: black;
@@ -42,6 +44,7 @@ width: 50%;
     position: absolute;
     right: 5%;
     bottom: 0px;
+    padding: 5px;
 }
 
 *{
